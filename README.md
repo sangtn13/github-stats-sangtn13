@@ -1,13 +1,10 @@
-# [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+# [GitHub Stats Visualization](https://github.com/SangTran13/github-stats)
 
-<!--
-https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
--->
-<a href="https://github.com/jstrieb/github-stats">
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" />
+<a href="https://github.com/SangTran13/github-stats">
+<img src="https://github.com/SangTran13/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
+<img src="https://github.com/SangTran13/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+<img src="https://github.com/SangTran13/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
+<img src="https://github.com/SangTran13/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" />
 </a>
 
 Generate visualizations of GitHub user and repository statistics with GitHub
@@ -62,8 +59,6 @@ For more information on inaccuracies, see issue
 
 # Installation
 
-<!-- TODO: Add details and screenshots -->
-
 1. Create a personal access token (not the default GitHub Actions token) using
    the instructions
    [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
@@ -74,7 +69,7 @@ For more information on inaccuracies, see issue
      access token to work. For more, see 
      [#30](https://github.com/jstrieb/github-stats/issues/30).
 2. Create a copy of this repository by clicking
-   [here](https://github.com/jstrieb/github-stats/generate). Note: this is
+   [here](https://github.com/SangTran13/github-stats/generate). Note: this is
    **not** the same as forking a copy because it copies everything fresh,
    without the huge commit history. 
 3. Go to the "Secrets" page of your copy of the repository. If this is the
@@ -86,20 +81,19 @@ For more information on inaccuracies, see issue
 5. It is possible to change the type of statistics reported by adding other
    repository secrets. 
    - To ignore certain repos, add them (in owner/name format e.g.,
-     `jstrieb/github-stats`) separated by commas to a new secret—created as
+     `SangTran13/github-stats`) separated by commas to a new secret—created as
      before—called `EXCLUDED`.
    - To ignore certain languages, add them (separated by commas) to a new
      secret called `EXCLUDED_LANGS`. For example, to exclude HTML and TeX you
      could set the value to `html,tex`.
    - To show statistics only for "owned" repositories and not forks with
      contributions, add an environment variable (under the `env` header in the
-     [main
-     workflow](https://github.com/jstrieb/github-stats/blob/master/.github/workflows/main.yml))
+     [main workflow](https://github.com/SangTran13/github-stats/blob/master/.github/workflows/main.yml))
      called `EXCLUDE_FORKED_REPOS` with a value of `true`.
    - These other values are added as secrets by default to prevent leaking
      information about private repositories. If you're not worried about that,
      you can change the values directly [in the Actions workflow
-     itself](https://github.com/jstrieb/github-stats/blob/05de1314b870febd44d19ad2f55d5e59d83f5857/.github/workflows/main.yml#L48-L53).
+     itself](https://github.com/SangTran13/github-stats/blob/05de1314b870febd44d19ad2f55d5e59d83f5857/.github/workflows/main.yml#L48-L53).
 6. Go to the [Actions
    Page](../../actions?query=workflow%3A"Generate+Stats+Images") and press "Run
    Workflow" on the right side of the screen to generate images for the first
@@ -109,15 +103,14 @@ For more information on inaccuracies, see issue
 7. Take a look at the images that have been created in the
    [`generated`](generated) folder.
 8. To add your statistics to your GitHub Profile README, copy and paste the
-   following lines of code into your markdown content. Change the `username`
-   value to your GitHub username.
+   following lines of code into your markdown content:
    ```md
-   ![](https://raw.githubusercontent.com/username/github-stats/master/generated/overview.svg#gh-dark-mode-only)
-   ![](https://raw.githubusercontent.com/username/github-stats/master/generated/overview.svg#gh-light-mode-only)
+   ![]([https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/overview.svg#gh-dark-mode-only](https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/overview.svg#gh-dark-mode-only))
+   ![]([https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/overview.svg#gh-light-mode-only](https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/overview.svg#gh-light-mode-only))
    ```
    ```md
-   ![](https://raw.githubusercontent.com/username/github-stats/master/generated/languages.svg#gh-dark-mode-only)
-   ![](https://raw.githubusercontent.com/username/github-stats/master/generated/languages.svg#gh-light-mode-only)
+   ![]([https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/languages.svg#gh-dark-mode-only](https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/languages.svg#gh-dark-mode-only))
+   ![]([https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/languages.svg#gh-light-mode-only](https://raw.githubusercontent.com/SangTran13/github-stats/master/generated/languages.svg#gh-light-mode-only))
    ```
 9. Link back to this repository so that others can generate their own
    statistics images.
