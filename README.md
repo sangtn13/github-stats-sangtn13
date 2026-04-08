@@ -116,7 +116,6 @@ For more information on inaccuracies, see issue
    statistics images.
 10. Star this repo if you like it!
 
-
 # Support the Project
 
 There are a few things you can do to support the project:
@@ -138,7 +137,6 @@ releasing work publicly on the Web.
 - [Signal Foundation](https://signal.org/donate/)
 - [Mozilla](https://donate.mozilla.org/en-US/)
 - [The Internet Archive](https://archive.org/donate/index.php)
-
 
 # Related Projects
 
